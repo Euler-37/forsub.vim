@@ -12,7 +12,8 @@ let g:loaded_forsub = 1
 "----------------------------------------------"
 "" sub:test,tco spin self,isi i,rdi d
 "" fun:test,tco spin self,isi i,rdi d,rd s
-command! -nargs=0 ProcedureConvert call ProcedureConvertVim()
+""command! -nargs=0 ProcedureConvert call ProcedureConvertVim()
+inoremap <script> <Plug>ProcedureConvert <C-U>call <SID>ProcedureConvertVim()<CR>
 function! ProcedureConvertVim()
 python3 <<EOF
 ParaType={"i":"integer","r":"real","c":"complex","s":"character","l":"logical","tt":"type","tc":"class"}
