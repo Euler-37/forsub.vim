@@ -2,7 +2,9 @@
 
 `imap <M-p> <ESC>:ProcedureConvert<cr>zR^%O`
 
-# This plugin is for quick input for fortran subroutines and funcions.
+# Intro
+
+This plugin is for quick input for fortran subroutines and funcions.
 
 example:
 
@@ -25,7 +27,7 @@ function test(self, i, d) result(s)
     real(kind=8)::s
     |
 end function test
-
+```
 The abbreviations have three items and a dummy name
 
 - 1 type name 
